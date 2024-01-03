@@ -1,0 +1,19 @@
+m=math
+a=120
+q=0
+s="X-mas!"
+function TIC()t=time()/100
+q=q<-90 and 250 or q-1
+for y=-68,67 do for x=-a,a do
+X=m.atan2(y,x)*2.546-t/9
+c=X//1+999/(x*x+y*y)^0.5+t
+pix(x+a,y+68,c)
+end
+end
+for i=1,#s do
+print(s:sub(i,i),q+i*20,80+9*m.sin(t+i),2,0,3)
+end
+end
+
+
+
