@@ -1,0 +1,17 @@
+t=0m=math s=m.sin c=m.cos p=pix
+for i=0,4e4 do
+x=i%240y=i/240
+p(x,y,x)
+end
+function TIC()
+t=t+.05
+for i=1,5 do
+a=i*m.pi*2/5+t
+circ(180+(20+10*s(t))*c(a/i),68+(20+10*s(t))*s(a),4+2*s(t),t)
+end
+for i=0,4e4 do
+x=i%240y=i/240
+k=p(x,y)
+p(x-1,y,k-1)
+end
+end
