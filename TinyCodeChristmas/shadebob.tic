@@ -1,0 +1,18 @@
+t=0k=0 d=0s=math.sin
+function TIC()
+if t//1%20==0 then
+k=t//1
+for b=0,47 do
+poke(16320+b,255/(1+2^(4-k*b%3-b/5)))
+end
+cls()
+d=t%3
+end
+x=120+s(2*t)*110
+y=68+s((1.1+d)*t)*60
+t=t+.02
+for i=-3,3 do
+for j=-3,3 do
+c=pix(x+i,y+j)
+pix(x+i,y+j,c+1)
+end end end
