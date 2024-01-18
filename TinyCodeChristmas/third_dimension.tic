@@ -1,12 +1,6 @@
 sin=math.sin
 cos=math.cos
 angle=0
-function rotatey(p,angle)
- xt = p.x*cos(angle) - p.z*sin(angle)
- yt = p.y
- zt = p.x*sin(angle) + p.z*cos(angle)
- return {x=xt,y=yt,z=zt}
-end
 
 function rotatex(p,angle)
  xt = p.x
